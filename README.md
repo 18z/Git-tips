@@ -29,11 +29,13 @@
 
 情境三：
 
-		Github：Commit A (2015/1/1)
+		Github：
+				Commit A (2015/1/1)
 				Commit B (2015/1/2)
 				Commit C (2015/1/3)
 
-		Local：	Commit A (2015/1/1)
+		Local：
+				Commit A (2015/1/1)
 				Commit B (2015/1/2)
 
 		Local 編輯前忘記先下 git pull 與Github同步
