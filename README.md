@@ -60,3 +60,28 @@
 
 		title 部分可寫成 fixed #6
 		也就是把第六個 Issue 解掉的意思
+
+情境五：
+
+		發 Pull Request 給其他Project
+
+解法：
+
+		1. fork 該 Project
+		2. git clone 自己 Github 上那份 fork 到 local 端
+		3. 在 local 端進行修改
+		4. git push 到自己 Github 上那份 fork
+		5. 在自己 Github 上按下 open pull Request
+
+情境六：
+
+		更新 fork repository
+
+解法：
+
+		1. 在 local 端設定 upstream
+		git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git 
+
+		2. git fetch upstream
+		3. git checkout master
+		4. git merge upstream/master
