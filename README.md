@@ -85,3 +85,10 @@
 		2. git fetch upstream
 		3. git checkout master
 		4. git merge upstream/master
+
+> Git 答問區：
+
+		問：git pull 跟 git fetch 差別？
+		
+		答：git pull = git fetch + git merge
+		
