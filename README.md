@@ -1,5 +1,9 @@
 ## Git-tips
 
+> 下面所提到的情境與解法，更詳細的內容可參考：
+
+		http://git-tutorial.readthedocs.org/en/latest/
+
 >情境一：
 
 		從 Github 上 Clone 一 project 下來後
