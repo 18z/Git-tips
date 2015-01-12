@@ -1,8 +1,8 @@
 ## Git-tips
 
-> 下面所提到的情境與解法，更詳細的內容可參考：
+>下面所提到的情境與解法，更詳細的內容可參考：
 
-		http://git-tutorial.readthedocs.org/en/latest/
+[Practical guide for git users](http://git-tutorial.readthedocs.org/en/latest/)
 
 >情境一：
 
