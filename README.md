@@ -102,6 +102,15 @@ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.gi
 4. git merge upstream/master
 ```
 
+>情境七：
+
+```bash
+備份 github 上面所有 repository
+
+解法：
+$ curl "https://raw.github.com/ptrofimov/github-backup-sh/master/github-backup.sh" | sh -s <username>
+```
+
 > Git 答問區：
 
 問：git pull 跟 git fetch 差別？
