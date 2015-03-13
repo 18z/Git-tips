@@ -111,6 +111,40 @@ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.gi
 $ curl "https://raw.github.com/ptrofimov/github-backup-sh/master/github-backup.sh" | sh -s <username>
 ```
 
+>情境八：
+
+```bash
+commit 前，檢查是否以特定 email 提交
+
+1. 在 .gitconfig 裡面至少填入這些資訊
+
+[user]
+    email = xxx@gmail.com
+
+[init]
+    templatedir = ~/.git/templates
+
+
+2. vim .git/templates/hooks/pre-commit
+
+填入以下腳本
+
+#!/bin/bash
+
+remote=$(git remote -v |grep push |grep -o "github")
+email=$(git config user.email)
+
+if [ $remote == "github" ] && [ $email == "xxx@gmail.com" ]; then
+    echo "change your email!"
+    exit 1
+else
+    echo "okay to commit"
+    exit 0
+fi
+
+3. chmod +x .git/templates/hooks/pre-commit
+```
+
 > Git 答問區：
 
 問：git pull 跟 git fetch 差別？
