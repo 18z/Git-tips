@@ -164,6 +164,14 @@ remote repository 上有多個 branch，想 clone 單一 branch
 5. $ git checkout -b experimental origin/experimental (clone 下來開發)
 
 ```
+> 情境十：
+
+```bash
+修改前一次 commit 使用者名稱與email
+
+解法：
+$ git commit --amend --author "New Author Name <email@address.com>" 
+```
 
 > Git 答問區：
 
