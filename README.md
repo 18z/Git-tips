@@ -145,6 +145,26 @@ fi
 3. chmod +x .git/templates/hooks/pre-commit
 ```
 
+>情境九：
+
+```bash
+remote repository 上有多個 branch，想 clone 單一 branch
+
+解法：
+
+1. $ git clone git://example.com/myproject
+2. $ cd myproject
+3. $ git branch -a
+	* master
+	remotes/origin/HEAD
+	remotes/origin/master
+	remotes/origin/v1.0-stable
+	remotes/origin/experimental
+4. $ git checkout origin/experimental (單純看看內容)
+5. $ git checkout -b experimental origin/experimental (clone 下來開發)
+
+```
+
 > Git 答問區：
 
 問：git pull 跟 git fetch 差別？
