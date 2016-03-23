@@ -183,6 +183,17 @@ $ git commit --amend --author "New Author Name <email@address.com>"
 $ git cherry-pick A
 ```
 
+> 情境十二：
+
+```bash
+重新命名 local branch 與 remote branch
+
+解法：
+$ git branch -m old_branch new_branch         # Rename branch locally    
+$ git push origin :old_branch                 # Delete the old branch    
+$ git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
+```
+
 > Git 答問區：
 
 問：git pull 跟 git fetch 差別？
