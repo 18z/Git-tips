@@ -173,6 +173,16 @@ remote repository 上有多個 branch，想 clone 單一 branch
 $ git commit --amend --author "New Author Name <email@address.com>" 
 ```
 
+> 情境十一：
+
+```bash
+將其他 branch 上的 commit pick 來用 (cherry-pick)
+假設使用者當前在 development branch，想要 pick hotfix branch 上的 A commit 來用
+
+解法：
+$ git cherry-pick A
+```
+
 > Git 答問區：
 
 問：git pull 跟 git fetch 差別？
