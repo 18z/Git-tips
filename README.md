@@ -194,6 +194,20 @@ $ git push origin :old_branch                 # Delete the old branch
 $ git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
 ```
 
+> 情境十三：
+
+```bash
+將 remote url 從 http 轉為 ssh
+
+解法：
+$ git remote set-url origin git@github.com:USERNAME/OTHERREPOSITORY.git
+
+將 remote url 從 ssh 轉為 http
+
+解法：
+$ git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
+```
+
 > Git 答問區：
 
 問：git pull 跟 git fetch 差別？
