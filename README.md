@@ -208,6 +208,15 @@ $ git remote set-url origin git@github.com:USERNAME/OTHERREPOSITORY.git
 $ git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
 ```
 
+> 情境十四：
+
+```bash
+將 local 與 remote 端 revert 到 certain commit
+$ git checkout master
+$ git reset --hard 94b90dc1121ce477131fa60ffdc234591554b6c8 (commit hash value)
+$ git push -f origin master
+```
+
 > Git 答問區：
 
 問：git pull 跟 git fetch 差別？
